@@ -1,50 +1,58 @@
-let sliderImages = document.querySelectorAll('.slide')
-let  arrowLeft = document.querySelector('#arrow-left')
-let  arrowRight = document.querySelector('#arrow-right')
-let  current = 0;
 
-// Clear all Images
-funtion reset(){
-  for (let i = 0; i < sliderImages.length; i++){
-    sliderImages[i].style.display = 'none';
+var sliderImages;
+var arrowLeft;
+var arrowRight;
+var current;
+function init() {
+  sliderImages = document.querySelectorAll(".slide");
+  arrowLeft = document.querySelector("#arrow-left");
+  arrowRight = document.querySelector("#arrow-right");
+  current = 0;
+  startSlide();
+}
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
   }
 }
 
-// Initializes slider
-funtion startSlide(){
+// Init slider
+function startSlide() {
   reset();
-//  sliderImages[0].style.display = 'block';
+  if (sliderImages) {
+  sliderImages[0].style.display = "block";
+}
 }
 
-// Show preview
-function slideLeft(){
+// Show prev
+function slideLeft() {
   reset();
-  sliderImages[current].style.display = 'block';
+  sliderImages[current - 1].style.display = "block";
+  current--;
 }
 
 // Show next
-function slideRight (){
+function slideRight() {
   reset();
-  sliderImages[current].style.display = 'block';
+  sliderImages[current + 1].style.display = "block";
+  current++;
 }
-// Left arrow click
-arrowLeft.addEventListener('click', function(){
-  if(curent === 0){
-    current = sliderImages.length - 1;
-  } else {
-    current --;
+
+
+  // Left arrow click
+function lClick(){
+    if (current == 0) {
+      current = sliderImages.length - 1;
+    }
+    slideLeft();
   }
-  slideLeft();
-});
-// Right arrow click
-arrowRight.addEventListener('click', function(){
-  if(curent === sliderImages.length -1){
-    current = 0;
-  } else {
-    current ++;
-  }
+
+  // Right arrow click
+ function rClick() {
+    if (current == sliderImages.length - 1) {
+      current = -1;
+    }
     slideRight();
-
-});
-
-startSlide();
+  }
