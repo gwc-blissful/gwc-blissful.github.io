@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
-    <meta charset="utf-8">
+<link rel="stylesheet" href="meditation.css">
+     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http.equiv="X-UA-Compatible"	content="ie=edge">
        <title>Home</title>
-     <link rel="stylesheet" href="meditation.css">
-    <link href='https://fonts.googleapis.com/css?family=Droid Sans Mono' rel='stylesheet'>
-   <script type="meditation.js"> </script>
-
+   <link href='https://fonts.googleapis.com/css?family=Droid Sans Mono' rel='stylesheet'>
   </head>
 
   <body>
-
     <header>
       <ul>
         <li> <a class='home' href='index.html'>blissful</a></li>
@@ -24,28 +20,32 @@
         <li> <a href='meditation.html'>meditation</a></li>
       </ul>
     </header>
-
-
-  <div class="wrap">
-     <div id= "arrow-left" class="arrow"></div>
-     <div id="slider">
-       <div class="slide slide1">
-         <div class="slide-content">
-           <span>Home_Image1</span>
-         </div>
-       </div>
-       <div class="slide slide2">
-         <div class="slide-content">
-           <span>Home_Image2</span>
-         </div>
-       </div>
-       <div class="slide slide3">
-         <div class="slide-content">
-           <span>Home_Image3</span>
-         </div>
-       </div>
-     </div>
-   <div id= "arrow-right" class="arrow"></div>
-   </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="wrap">
+      <div id="arrow-left" class="arrow" onclick="lClick()"></div>
+      <div id="slider">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <span>Image One</span>
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="slide-content">
+            <span>Image Two</span>
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="slide-content">
+            <span onclick = "test()">Image Three</span>
+          </div>
+        </div>
+      </div>
+      <div id="arrow-right" class="arrow" onclick = "rClick()"></div>
+    </div>
 </body >
+<script src = "meditation.js"></script>
+<script type = "text/javascript"> window.setTimeout(init, 5000);</script>
 </html>
