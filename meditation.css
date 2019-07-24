@@ -1,8 +1,5 @@
-body {
-  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
-}
 
-h1 {
+h1, h4, h2 {
   font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 ul {
@@ -37,8 +34,10 @@ li a {
 }
 
 li a:hover {
-  background-color: #00E6E6
+  background-color: #00E6E6;
 }
+
+
 
 p {
   font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
@@ -62,6 +61,11 @@ p {
   padding: 5px;
 }
 
+.columnmusic {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
@@ -71,123 +75,81 @@ p {
 }
 
 .medimg1 {
-	width: 560px;
-	height: 315px;
+  width: 560px;
+  height: 315px;
 }
 
-body, #slider, .wrap, .slide-content{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100vh;
-	overflow-x: hidden;
-}
 
-.wrap{postion: relative}
 
-.slide{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 
-.slide1{background-image: url('https://images.pexels.com/photos/805452/pexels-photo-805452.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')}
-.slide2{background-image: url('https://images.pexels.com/photos/210205/pexels-photo-210205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')}
-.slide3{background-image: url('https://images.pexels.com/photos/414160/pexels-photo-414160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')}
 
-.slide-content{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
 
-.slide-content span{
-	font-size: 5rem;
-	color: #fff;
-}
 
-.arrow{
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	margin-top: -35px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-}
-
-#arrow-left{
-	border-width: 30px 40px 30px 0;
-	border-color: transparent #fff transparent transparent;
-	left: 0;
-	margin-left: 30px;
-}
-
-#arrow-right{
-	border-width: 30px 0 30px 40px;
-	border-color: transparent transparent transparent #fff;
-	right: 0;
-	margin-right: 30px;
-}
-
-/* .flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 350px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-
-}
-
-.flip-card-front {
-  background-color: #E0FFFF;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #E0FFFF;
-  color: black;
-  transform: rotateY(180deg);
-}
-.center {
-  height: 200px;
-  position: relative;
-  border: none;
-}
-
-.center p {
+body,
+#slider,
+.wrap,
+.slide-content {
   margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("https://images.pexels.com/photos/805452/pexels-photo-805452.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+.slide2 {
+  background-image: url("https://images.pexels.com/photos/210205/pexels-photo-210205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.slide3 {
+  background-image: url("https://images.pexels.com/photos/414160/pexels-photo-414160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
 }
- */
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
