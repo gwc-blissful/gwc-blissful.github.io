@@ -67,8 +67,8 @@ p {
 }
 
 .medimg1 {
-  width: 550px;
-  height: 275px;
+	width=560px;
+	height=315px
 }
 
 body, #slider, .wrap, .slide-content{
