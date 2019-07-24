@@ -132,7 +132,7 @@ body, #slider, .wrap, .slide-content{
 	margin-right: 30px;
 }
 
-.flip-card {
+/* .flip-card {
   background-color: transparent;
   width: 250px;
   height: 350px;
@@ -190,3 +190,4 @@ body, #slider, .wrap, .slide-content{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+ */
