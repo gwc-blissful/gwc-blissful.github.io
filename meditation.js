@@ -1,7 +1,7 @@
 let sliderImages = document.querySelectorAll('.slide')
-  arrowLeft = document.querySelector('#arrow-left')
-  arrowRight = document.querySelector('#arrow-right')
-  current = 0;
+let  arrowLeft = document.querySelector('#arrow-left')
+let  arrowRight = document.querySelector('#arrow-right')
+let  current = 0;
 
 // Clear all Images
 funtion reset(){
@@ -13,19 +13,19 @@ funtion reset(){
 // Initializes slider
 funtion startSlide(){
   reset();
-  sliderImages[0].style.display = 'block';
+//  sliderImages[0].style.display = 'block';
 }
 
 // Show preview
 function slideLeft(){
   reset();
-  sliderImages[current -1].style.display = 'block';
+  sliderImages[current].style.display = 'block';
 }
 
 // Show next
 function slideRight (){
   reset();
-  sliderImages[current + 1].style.display = 'block';
+  sliderImages[current].style.display = 'block';
 }
 // Left arrow click
 arrowLeft.addEventListener('click', function(){
@@ -41,7 +41,7 @@ arrowRight.addEventListener('click', function(){
   if(curent === sliderImages.length -1){
     current = 0;
   } else {
-    current++;
+    current ++;
   }
     slideRight();
 
