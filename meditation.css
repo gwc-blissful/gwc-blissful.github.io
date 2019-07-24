@@ -1,6 +1,10 @@
 body {
   font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
+
+h1 {
+  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -67,8 +71,8 @@ p {
 }
 
 .medimg1 {
-	width:560px;
-	height:315px
+  width: 560px;
+  height: 315px;
 }
 
 body, #slider, .wrap, .slide-content{
@@ -127,4 +131,3 @@ body, #slider, .wrap, .slide-content{
 	right: 0;
 	margin-right: 30px;
 }
-
