@@ -195,7 +195,7 @@ body,
   transform: rotateY(180deg);
 }
 .center {
-  height: 100px;
+  height: 200px;
   position: relative;
   border: none;
 }
