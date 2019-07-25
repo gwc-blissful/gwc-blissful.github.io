@@ -1,5 +1,5 @@
 
-h1, h4, h2 {
+h1, h4, h2, h3, div {
   font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 ul {
@@ -37,12 +37,16 @@ li a:hover {
   background-color: #00E6E6;
 }
 
-
+.soul {
+  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+  font-size: 14px;
+}
 
 p {
   font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
   font-size: 19px;
 }
+
 
 .nav {
   padding: 30px;
@@ -61,6 +65,22 @@ p {
   padding: 5px;
 }
 
+.columnsoul {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+.columnabout {
+  float:left;
+  width: 25%;
+  padding: 5px;
+}
+
+.imgsoul {
+  width: 300px;
+  height: 200px;
+}
 .columnmusic {
   float: left;
   width: 33.3%;
@@ -80,18 +100,13 @@ p {
 }
 
 
-
-
-
-
-
 body,
 #slider,
 .wrap,
 .slide-content {
   margin: 0;
   padding: 0;
-  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
@@ -152,64 +167,4 @@ body,
   border-color: transparent transparent transparent #fff;
   right: 0;
   margin-right: 30px;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 140px;
-  height: 220px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-
-}
-
-.flip-card-front {
-  background-color: #E0FFFF;
-  color: black;
-  font-size: 12px;
-}
-
-.flip-card-back {
-  background-color: #E0FFFF;
-  color: black;
-  transform: rotateY(180deg);
-}
-.center {
-  height: 200px;
-  position: relative;
-  border: none;
-}
-
-.center p {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 4px;
 }
