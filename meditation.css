@@ -107,10 +107,10 @@ body,
   background-repeat: no-repeat;
 }
 
-.slide1 {
+.slide2 {
   background-image: url("https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
-.slide2 {
+.slide1 {
   background-image: url("https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 .slide3 {
