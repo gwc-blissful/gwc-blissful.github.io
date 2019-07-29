@@ -19,6 +19,12 @@ ul {
 }
 
 
+li img{
+  width:120px;
+  height:45px;
+}
+
+
 li a {
   float: right;
   display: block;
